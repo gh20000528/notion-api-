@@ -1,7 +1,7 @@
 import { Client } from '@notionhq/client';
 import { NextApiRequest, NextApiResponse} from 'next';
 
-const notionSecret = process.env. NOTION_TOKEN
+const notionSecret = process.env.NOTION_TOKEN
 const notionDatabaseID = process.env.NOTION_DATABASE_ID
 
 const notion = new Client({ auth: notionSecret })
